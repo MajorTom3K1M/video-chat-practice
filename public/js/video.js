@@ -9,15 +9,10 @@ let getUserMediaAttempts = 5;
 let gettingUserMedia = false;
 
 const configuration = {
-  'iceServers': [{
-    'urls': ['stun:stun.l.google.com:19302']
+  iceServers: [{
+    urls: 'stun:stun.l.google.com:19302'
   }]
 };
-// const config = {
-//   'iceServers': [{
-//     'urls': ['stun:stun.l.google.com:19302']
-//   }]
-// };
 
 const constraints = {
   video: {facingMode: "user"}

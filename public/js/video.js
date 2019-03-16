@@ -9,8 +9,14 @@ let getUserMediaAttempts = 5;
 let gettingUserMedia = false;
 
 const configuration = {
+  // Uses Google's STUN server
   iceServers: [{
-    urls:'stun:stun.voipstunt.com'
+      urls: 'stun:piratefsh@45.55.61.164'
+  },
+  {
+  // Use my TURN server on DigitalOcean
+      urls: 'turn:piratefsh@45.55.61.164',
+      credential: 'password'
   }]
 };
 

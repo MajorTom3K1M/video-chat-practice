@@ -7,7 +7,7 @@ var fs = require('fs');
 
 var useAuth = true;
 var app = express();
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 8080;
 
 var options = {
     key: fs.readFileSync('certs/server-key.pem'),
